@@ -36,7 +36,7 @@ source domain are below.
 
 ## WGAN
 
-### Architecture-1 : Source dataset accuracy results
+### Source dataset accuracy results
 
 <table class="table table-bordered">
   <thead class="thead-dark">
@@ -65,7 +65,7 @@ In our experimentation, we first evaluated our classifiers
 any kind of domain adaptation. The baseline results for the
 classifiers used are provided in following table
 
-### Architecture-2 : Baseline results
+### Baseline results
 
 we first evaluated our classifiers (VGG16 and ResNET18) on target domain without doing any kind of domain adaptation.
 
@@ -91,7 +91,7 @@ we first evaluated our classifiers (VGG16 and ResNET18) on target domain without
   </tbody>
 </table>
 
-### Architecture-3 : Direct fine-tuning on Target Dataset Accuracy
+### Direct fine-tuning on Target Dataset Accuracy
 
 Then in our next experiment, we fine-tuned our classifiers directly on target domain to get an upper bound of
 accuracies on target domain for each classifier.
