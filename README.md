@@ -185,7 +185,11 @@ Accuracy (Unseen)</th>
 </table>
 
 
-### Feature Space Unsupervised Domain Adaptation CycleGAN
+### CycleGAN Treanslated Results
+
+<figure class="image"><img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/CycleGAN%20translated%20images.jpg" alt="System Diagram"  style="display: block;  margin-left: auto;  margin-right: auto;"><figcaption></figcaption></figure>
+
+## Feature Space Unsupervised Domain Adaptation CycleGAN
 We retrained both the classifier with an additional domain classifier network in them. This domain classifier network help in making the features used in classifier independent of any domain information.
 
 
@@ -210,11 +214,6 @@ We retrained both the classifier with an additional domain classifier network in
     </tr>
   </tbody>
 </table>
-
-## CycleGAN Treanslated Results
-
-<figure class="image"><img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/CycleGAN%20translated%20images.jpg" alt="System Diagram"  style="display: block;  margin-left: auto;  margin-right: auto;"><figcaption></figcaption></figure>
-
 
 ## Baseline Results
 
