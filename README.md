@@ -127,7 +127,7 @@ Confusion Matrices for baseline results. (a) VGG16 results on Target Dataset 1, 
 
 <img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/Confusion%20Matrices%20for%20baseline%20results.JPG" alt="Results" style="display: block;  margin-left: auto;  margin-right: auto;">
 
-### Fine-tuned on Target Dataset
+### Fine-tuned on Target Domain Confusion Matrix
 
 Classifiers fine-tuned on target dataset directly. (a) VGG16 results on Target Dataset 1, (b) VGG16 results on Target Dataset 2, (c) ResNET18 results on Target Dataset 1, (d) ResNET18 results on Target Dataset 2
 
