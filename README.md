@@ -4,8 +4,6 @@ Facial expression recognition is a challenging task in the domain of deep learni
 faces is the lack of samples, and co-existence of different ethnicity in the region. In our approach, we used different approaches to address the problem of domain adaptation.
 WGAN failed to produce expected results, whereas CycleGAN and feature-based domain adaptive models performed reasonably good on our data. We were able to get very close to the baseline results using domain adaptation approaches used and even got slightly better accuracy for VGG16 in one of the approach.
 
-
-
 # Dataset
 
 ## Source Dataset 
@@ -185,13 +183,12 @@ Accuracy (Unseen)</th>
 </table>
 
 
-### CycleGAN Treanslated Results
+### CycleGAN Translated Results
 
 <figure class="image"><img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/CycleGAN%20translated%20images.jpg" alt="System Diagram"  style="display: block;  margin-left: auto;  margin-right: auto;"><figcaption></figcaption></figure>
 
 ## Feature Space Unsupervised Domain Adaptation CycleGAN
 We retrained both the classifier with an additional domain classifier network in them. This domain classifier network help in making the features used in classifier independent of any domain information.
-
 
 <table class="table table-bordered">
   <thead class="thead-dark">
