@@ -6,6 +6,10 @@ WGAN failed to produce expected results, whereas CycleGAN and feature-based doma
 
 # Dataset
 
+Used RAF_DB as sourced dataset and Self collected Pakistani facial images as target dataset
+
+<figure class="image"><img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/RAF_Pak.jpg" alt="System Diagram" style="display: block;  margin-left: auto;  margin-right: auto;"><figcaption></figcaption></figure>
+
 ## Source Dataset 
 
 Real-world Affective Faces Database (RAF_DB) contains 15338 coloured images of westren facial expressions, we are using only seven classes although RAF_DB contains more than seven classes and around 30K images.
