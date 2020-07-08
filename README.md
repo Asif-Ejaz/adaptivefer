@@ -117,6 +117,22 @@ accuracies on target domain for each classifier.
   </tbody>
 </table>
 
+### Baseline Results Confusion Matrix
+
+Confusion Matrices for baseline results. (a) VGG16 results on Target Dataset 1, (b) VGG16 results on Target Dataset 2, (c) ResNET18 results on Target Dataset 1, (d) ResNET18 results on Target Dataset 2
+
+<img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/Confusion%20Matrices%20for%20baseline%20results.JPG" alt="Results" style="display: block;  margin-left: auto;  margin-right: auto;">
+
+### Fine-tuned on Target Dataset
+
+Classifiers fine-tuned on target dataset directly. (a) VGG16 results on Target Dataset 1, (b) VGG16 results on Target Dataset 2, (c) ResNET18 results on Target Dataset 1, (d) ResNET18 results on Target Dataset 2
+
+<img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/Classifiers%20fine-tuned%20on%20target%20dataset%20directly.JPG" alt="Results" style="display: block;  margin-left: auto;  margin-right: auto;">
+
+### Baseline Trained Models
+
+Baseline trained models can be found <a href="#" target="_blank">here</a>.
+
 ## WGAN
 
 <figure class="image"><img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/WGAN%20Results.jpg" alt="System Diagram"  style="display: block;  margin-left: auto;  margin-right: auto;"><figcaption></figcaption></figure>
@@ -155,6 +171,10 @@ Epochs</td>
   </tbody>
 </table>
 
+### WGAN Trained Models 
+
+WGAN Trained models are available <a href="#" target="_blank">here</a>.
+
 ## CycleGAN
 
 ### Fine Tune CycleGAN
@@ -182,10 +202,20 @@ Accuracy (Unseen)</th>
   </tbody>
 </table>
 
-
 ### CycleGAN Translated Results
 
 <figure class="image"><img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/CycleGAN%20translated%20images.jpg" alt="System Diagram"  style="display: block;  margin-left: auto;  margin-right: auto;"><figcaption></figcaption></figure>
+
+
+## Fine-tuned on CycleGAN translated samples
+
+Classifiers fine-tuned on CycleGAN translated samples. (a) ResNET18 results on Target Dataset 1, (b) ResNET18 results on Target Dataset 2
+
+<img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/CycleGAN%20Confusion%20Matrix.JPG" alt="Results" style="display: block;  margin-left: auto;  margin-right: auto;">
+
+### CycleGAN Trained Models
+
+CycleGAN trained models are available <a href="#" target="_blank">here</a>.
 
 ## Feature Space Unsupervised Domain Adaptation CycleGAN
 We retrained both the classifier with an additional domain classifier network in them. This domain classifier network help in making the features used in classifier independent of any domain information.
@@ -212,26 +242,13 @@ We retrained both the classifier with an additional domain classifier network in
   </tbody>
 </table>
 
-## Baseline Results
-
-Confusion Matrices for baseline results. (a) VGG16 results on Target Dataset 1, (b) VGG16 results on Target Dataset 2, (c) ResNET18 results on Target Dataset 1, (d) ResNET18 results on Target Dataset 2
-
-<img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/Confusion%20Matrices%20for%20baseline%20results.JPG" alt="Results" style="display: block;  margin-left: auto;  margin-right: auto;">
-
-## Fine-tuned on Target Dataset
-
-Classifiers fine-tuned on target dataset directly. (a) VGG16 results on Target Dataset 1, (b) VGG16 results on Target Dataset 2, (c) ResNET18 results on Target Dataset 1, (d) ResNET18 results on Target Dataset 2
-
-<img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/Classifiers%20fine-tuned%20on%20target%20dataset%20directly.JPG" alt="Results" style="display: block;  margin-left: auto;  margin-right: auto;">
-
-## Trained using Feature Space Domain Adaptation
+### Trained using Feature Space Domain Adaptation Confusion Matrix
 
 Classifiers trained using feature space domain adaptation approach. (a) VGG16 results on Target Dataset 1, (b) VGG16 results on Target Dataset 2t, (c) ResNET18 results on Target Dataset 1, (d) ResNET18 results on Target Dataset 2
 
 <img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/Classifiers%20trained%20using%20feature%20space%20domain%20adaptation%20approach.JPG" alt="Results" style="display: block;  margin-left: auto;  margin-right: auto;">
 
-## Fine-tuned on CycleGAN translated samples
 
-Classifiers fine-tuned on CycleGAN translated samples. (a) ResNET18 results on Target Dataset 1, (b) ResNET18 results on Target Dataset 2
+### Feature Space Models
 
-<img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/CycleGAN%20Confusion%20Matrix.JPG" alt="Results" style="display: block;  margin-left: auto;  margin-right: auto;">
+Feature Space Unsupervised Domain Adaptation models are available <a href="#" target="_blank">here</a>.
