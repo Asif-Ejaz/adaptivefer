@@ -36,7 +36,7 @@ source domain are below.
 
 ## Baseline results
 
-### Source Dataset Accuracy Results
+### Source Domain Accuracy Results
 
 <table class="table table-bordered">
   <thead class="thead-dark">
@@ -65,7 +65,7 @@ In our experimentation, we first evaluated our classifiers
 any kind of domain adaptation. The baseline results for the
 classifiers used are provided in following table
 
-### Target Domain Results
+### Target Domain Accuracy Results
 
 we first evaluated our classifiers (VGG16 and ResNET18) on target domain without doing any kind of domain adaptation.
 
@@ -119,7 +119,7 @@ accuracies on target domain for each classifier.
   </tbody>
 </table>
 
-### WGAN
+## WGAN
 
 <figure class="image"><img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/WGAN%20Results.jpg" alt="System Diagram"  style="display: block;  margin-left: auto;  margin-right: auto;"><figcaption></figcaption></figure>
 
