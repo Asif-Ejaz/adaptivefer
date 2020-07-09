@@ -1,12 +1,12 @@
 # Abstract
 
 Facial expression recognition is a challenging task in the domain of deep learning. Ensuring good performance is the cornerstone of the research problem related to transfer learning and domain adaptation. In the facial expression recognition task, a well-performing deep neural network model trained on one dataset (source domain) typically underperforms when subjected to a different but relevant dataset (target domain). This under-performance is the result of facial expression variation across different domains, even in the case of same expression. In our case, we have Western faces as source domain and Pakistani faces as target domain. Further problem arises in using Pakistani
-faces is the lack of samples, and co-existence of different ethnicity in the region. In our approach, we used different approaches to address the problem of domain adaptation.
+faces is the lack of samples, and co-existence of different ethnicity in the region. We used input and feature space domain adaoptation approaches to address the problem of domain adaptation.
 WGAN failed to produce expected results, whereas CycleGAN and feature-based domain adaptive models performed reasonably good on our data. We were able to get very close to the baseline results using domain adaptation approaches used and even got slightly better accuracy for VGG16 in one of the approach.
 
 # Dataset
 
-Used RAF_DB as sourced dataset and Self collected Pakistani facial images as target dataset
+We Used RAF_DB as source dataset and for target dataset we collected and annotated Pakistani facial images from different internet sources.
 
 <figure class="image"><img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/RAF_Pak.jpg" alt="System Diagram" style="display: block;  margin-left: auto;  margin-right: auto;"><figcaption></figcaption></figure>
 
@@ -18,13 +18,15 @@ Real-world Affective Faces Database (RAF_DB) contains 15338 coloured images of w
 
 ## Target Dataset
 
-We have collected around 4000 coloured Pakistani facial expression images
+We have collected and annotated around 4000 coloured Pakistani facial expression images as out target dataset.
 
 <img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/Target%20Dataset%20Stat%20upd.JPG" alt="Target Dataset" style="width:90%;display: block;  margin-left: auto;  margin-right: auto;">
 
 # Experiments and Results
 
-1. Unsupervised Domain Adaptation using WGAN — WGAN results were not useable. So this approach was discontinued.
+We used below mentioned approaches to solve domain adoptation problems:
+
+1. Unsupervised Domain Adaptation using WGAN — WGAN results were not useable so,this approach was discontinued.
 2. Semi-supervised Domain Adaptation using CycleGAN.
 3. Feature Space Unsupervised Domain Adaptation.
 
@@ -33,7 +35,7 @@ is used in domain adaptation process and second dataset is
 kept unseen in all the ways for testing purposes. This was
 done to ensure model performance consistency on target domain. We used two classifiers in our experimentation. One
 is VGG16 pre-trained on ImageNet Dataset and second is
-ResNET18 pre-trained on ImageNet Dataset. These classifiers were trained on source domain and their accuracies on
+ResNET18 pre-trained on ImageNet Dataset. These classifiers were first trained on source domain dataset and their accuracies on
 source domain are below.
 
 ## Baseline results
@@ -183,7 +185,7 @@ WGAN Trained models are available <a href="#" target="_blank">here</a>.
 
 ### Fine Tune CycleGAN
 
-Using CycleGAN translated images, we fine-tuned our classifiers and accuracy score on both target datasets are below.
+Our Second approach was to translate source domain images into target domain images and then fine tune our models using these translated images. Below are the reported accuracies for VGG16 & ResNet18 on target dataset1 & target dataset2.
 
 <table class="table table-bordered">
   <thead class="thead-dark">
