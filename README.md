@@ -24,7 +24,7 @@ We have collected and annotated around 4000 coloured Pakistani facial expression
 
 # Experiments and Results
 
-We used below mentioned approaches to solve domain adoptation problems:
+We used following mentioned approaches to attempt domain adaptation problem:
 
 1. Unsupervised Domain Adaptation using WGAN — WGAN results were not useable so,this approach was discontinued.
 2. Semi-supervised Domain Adaptation using CycleGAN.
@@ -33,13 +33,13 @@ We used below mentioned approaches to solve domain adoptation problems:
 We have used two target datasets in our experimentation. The first dataset
 is used in domain adaptation process and second dataset is
 kept unseen in all the ways for testing purposes. This was
-done to ensure model performance consistency on target domain. We used two classifiers in our experimentation. One
+done to ensure model performance consistency on target domain. We used two classifiers in our experimentation. First one
 is VGG16 pre-trained on ImageNet Dataset and second is
 ResNET18 pre-trained on ImageNet Dataset. 
 
 ## Baseline results
 
-### Source Domain Accuracy Results
+### Source Domain Dataset Results
 
 We started ourn experimentation by training VGG16 and ResNet18 on source domain dataset and their accuracies on
 source domain are provided below.
@@ -66,12 +66,12 @@ source domain are provided below.
   </tbody>
 </table>
 
-### Target Domain Accuracy Results
+### Target Domain Dataset Results
 
 In our experimentation, we first evaluated our classifiers
 (VGG16 and ResNET18) on target domain without doing
 any kind of domain adaptation. The baseline results for the
-classifiers used are provided in following table
+classifiers used are provided in the following table:
 
 <table class="table table-bordered">
   <thead class="thead-dark">
@@ -100,7 +100,6 @@ classifiers used are provided in following table
 Then in our next experiment, we fine-tuned our classifiers directly on target domain to get an upper bound of
 accuracies on target domain for each classifier.
 
-
 <table class="table table-bordered">
   <thead class="thead-dark">
     <tr>
@@ -123,13 +122,13 @@ accuracies on target domain for each classifier.
   </tbody>
 </table>
 
-### Baseline Results Confusion Matrix
+### Confusion Matrices for BaseLine Models
 
 Confusion Matrices for baseline results. (a) VGG16 results on Target Dataset 1, (b) VGG16 results on Target Dataset 2, (c) ResNET18 results on Target Dataset 1, (d) ResNET18 results on Target Dataset 2
 
 <img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/Confusion%20Matrices%20for%20baseline%20results.JPG" alt="Results" style="display: block;  margin-left: auto;  margin-right: auto;">
 
-### Fine-tuned on Target Domain Confusion Matrix
+###  Confusion Matrices for Models fine-tuned with Target Dataset
 
 Classifiers fine-tuned on target dataset directly. (a) VGG16 results on Target Dataset 1, (b) VGG16 results on Target Dataset 2, (c) ResNET18 results on Target Dataset 1, (d) ResNET18 results on Target Dataset 2
 
@@ -141,7 +140,7 @@ Baseline trained models can be found <a href="#" target="_blank">here</a>.
 
 ## WGAN
 
-Our first approach to solve domain adoptation problem was to use Wasserstein Generative Adversarial Networks. 
+Our first approach to attempt domain adoptation problem was to use Wasserstein Generative Adversarial Networks. Our intention was to generate target like samples using WGAN and then fine tune VGG16 and ResNet18 with these newly generated images.But as below results depict, we were not able to generate high quality images so we had to abandoned this approach.
 <figure class="image"><img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/WGAN%20Results.jpg" alt="System Diagram"  style="display: block;  margin-left: auto;  margin-right: auto;"><figcaption></figcaption></figure>
 
 ### Training Specifications of WGAN Models
@@ -184,9 +183,9 @@ WGAN Trained models are available <a href="#" target="_blank">here</a>.
 
 ## CycleGAN
 
-### Fine Tune CycleGAN
+### Models Fine-Tuned with CycleGAN Translated Images
 
-Our Second approach was to translate source domain images into target domain images and then fine tune our models using these translated images. Below are the reported accuracies for VGG16 & ResNet18 on target dataset1 & target dataset2.
+Our Second approach was to translate source domain images into target domain images and then fine tune our models using these translated images.We trained seven different CycleGAN models, one for each emotion, to transalate source into target domain.Below are the reported accuracies for VGG16 & ResNet18 when fine-tuned with CycleGAN transalted images.
 
 <table class="table table-bordered">
   <thead class="thead-dark">
@@ -209,12 +208,12 @@ Accuracy (Unseen)</th>
   </tbody>
 </table>
 
-### CycleGAN Translated Results
+### CycleGAN Results
 
 <figure class="image"><img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/CycleGAN%20translated%20images.jpg" alt="System Diagram"  style="display: block;  margin-left: auto;  margin-right: auto;"><figcaption></figcaption></figure>
 
 
-### Fine-tuned on CycleGAN Translated Samples Confusion Matrix
+### Confusion Matrices for Models Fine-Tuned with CycleGAN Translated Samples 
 
 Classifiers fine-tuned on CycleGAN translated samples. (a) ResNET18 results on Target Dataset 1, (b) ResNET18 results on Target Dataset 2
 
@@ -224,7 +223,7 @@ Classifiers fine-tuned on CycleGAN translated samples. (a) ResNET18 results on T
 
 CycleGAN trained models are available <a href="https://drive.google.com/drive/folders/1YQMcbfqQBPzH-AnjzQUshtOQNGcIlIF_?usp=sharing" target="_blank">here</a>.
 
-## Feature Space Unsupervised Domain Adaptation CycleGAN
+## Feature Space Unsupervised Domain Adaptation
 We retrained both the classifier with an additional domain classifier network in them. This domain classifier network helps in making the features used in classifier independent of any domain information.
 
 <table class="table table-bordered">
@@ -249,7 +248,7 @@ We retrained both the classifier with an additional domain classifier network in
   </tbody>
 </table>
 
-### Trained using Feature Space Domain Adaptation Confusion Matrix
+### Confusion Matrices for Models Trained Using Feature Space Domain Adaptation 
 
 Classifiers trained using feature space domain adaptation approach. (a) VGG16 results on Target Dataset 1, (b) VGG16 results on Target Dataset 2t, (c) ResNET18 results on Target Dataset 1, (d) ResNET18 results on Target Dataset 2
 
@@ -272,3 +271,4 @@ Feature Space Unsupervised Domain Adaptation models are available <a href="#" ta
 #### <a href="https://drive.google.com/drive/folders/1_wnEIReyglKoNDoFy_v5IPsJMrBEcijV?usp=sharing" target="_blank"> Pakistani Dataset 1 </a>
 #### <a href="https://drive.google.com/drive/folders/1STirPRvqy9e0Wg-blXqyq8LzygnJUSZu?usp=sharing" target="_blank"> Pakistani Dataset 2 </a>
 #### <a href="https://drive.google.com/drive/folders/13u0iPDFO9M10qrY529XiunLabDFaNe3m?usp=sharing" target="_blank"> RAF_DB Western Dataset </a>
+
