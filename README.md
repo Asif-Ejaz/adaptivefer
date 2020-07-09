@@ -14,7 +14,7 @@ We Used RAF_DB as source dataset and for target dataset we collected and annotat
 
 Real-world Affective Faces Database (RAF_DB) contains 15338 coloured images of westren facial expressions, we are using only seven classes although RAF_DB contains more than seven classes and around 30K images.
 
-<img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/Source%20Dataset%20Stat%20upd.JPG" alt="Source Dataset" style="width:90%;display: block;  margin-left: auto;  margin-right: auto;">
+<img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/SystemDiagramFinal.jpg" alt="Source Dataset" style="width:90%;display: block;  margin-left: auto;  margin-right: auto;">
 
 ## Target Dataset
 
