@@ -35,12 +35,14 @@ is used in domain adaptation process and second dataset is
 kept unseen in all the ways for testing purposes. This was
 done to ensure model performance consistency on target domain. We used two classifiers in our experimentation. One
 is VGG16 pre-trained on ImageNet Dataset and second is
-ResNET18 pre-trained on ImageNet Dataset. These classifiers were first trained on source domain dataset and their accuracies on
-source domain are below.
+ResNET18 pre-trained on ImageNet Dataset. 
 
 ## Baseline results
 
 ### Source Domain Accuracy Results
+
+We started ourn experimentation by training VGG16 and ResNet18 on source domain dataset and their accuracies on
+source domain are provided below.
 
 <table class="table table-bordered">
   <thead class="thead-dark">
@@ -64,14 +66,12 @@ source domain are below.
   </tbody>
 </table>
 
+### Target Domain Accuracy Results
+
 In our experimentation, we first evaluated our classifiers
 (VGG16 and ResNET18) on target domain without doing
 any kind of domain adaptation. The baseline results for the
 classifiers used are provided in following table
-
-### Target Domain Accuracy Results
-
-we first evaluated our classifiers (VGG16 and ResNET18) on target domain without doing any kind of domain adaptation.
 
 <table class="table table-bordered">
   <thead class="thead-dark">
@@ -141,6 +141,7 @@ Baseline trained models can be found <a href="#" target="_blank">here</a>.
 
 ## WGAN
 
+Our first approach to solve domain adoptation problem was to use Wasserstein Generative Adversarial Networks. 
 <figure class="image"><img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/WGAN%20Results.jpg" alt="System Diagram"  style="display: block;  margin-left: auto;  margin-right: auto;"><figcaption></figcaption></figure>
 
 ### Training Specifications of WGAN Models
@@ -224,7 +225,7 @@ Classifiers fine-tuned on CycleGAN translated samples. (a) ResNET18 results on T
 CycleGAN trained models are available <a href="https://drive.google.com/drive/folders/1YQMcbfqQBPzH-AnjzQUshtOQNGcIlIF_?usp=sharing" target="_blank">here</a>.
 
 ## Feature Space Unsupervised Domain Adaptation CycleGAN
-We retrained both the classifier with an additional domain classifier network in them. This domain classifier network help in making the features used in classifier independent of any domain information.
+We retrained both the classifier with an additional domain classifier network in them. This domain classifier network helps in making the features used in classifier independent of any domain information.
 
 <table class="table table-bordered">
   <thead class="thead-dark">
