@@ -4,6 +4,8 @@ Facial expression recognition is a challenging task in the domain of deep learni
 faces is the lack of samples, and co-existence of different ethnicity in the region. We used input and feature space domain adaoptation approaches to address the problem of domain adaptation.
 WGAN failed to produce expected results, whereas CycleGAN and feature-based domain adaptive models performed reasonably good on our data. We were able to get very close to the baseline results using domain adaptation approaches used and even got slightly better accuracy for VGG16 in one of the approach.
 
+<figure class="image"><img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/SystemDiagramFinal.jpg" alt="System Diagram" width="900" height="430"  style="display: block;  margin-left: auto;  margin-right: auto;"><figcaption></figcaption></figure>
+
 # Dataset
 
 We Used RAF_DB as source dataset and for target dataset we collected and annotated Pakistani facial images from different internet sources.
@@ -14,7 +16,7 @@ We Used RAF_DB as source dataset and for target dataset we collected and annotat
 
 Real-world Affective Faces Database (RAF_DB) contains 15338 coloured images of westren facial expressions, we are using only seven classes although RAF_DB contains more than seven classes and around 30K images.
 
-<img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/SystemDiagramFinal.jpg" alt="Source Dataset" style="width:90%;display: block;  margin-left: auto;  margin-right: auto;">
+<img src="https://raw.githubusercontent.com/adaptivefer/adaptivefer.github.io/master/assets/images/Source%20Dataset%20Stat%20upd.JPG" alt="Source Dataset" style="width:90%;display: block;  margin-left: auto;  margin-right: auto;">
 
 ## Target Dataset
 
